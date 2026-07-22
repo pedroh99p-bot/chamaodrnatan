@@ -1,10 +1,8 @@
-import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
-
-const siteUrl = process.env.SITE_URL ?? 'https://natanasiqueiraadv.vercel.app';
+import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: siteUrl,
-  output: 'static',
+  site: "https://chamaodrnatan.com.br",
+  output: "static",
   integrations: [sitemap()],
 });
