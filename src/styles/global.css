@@ -538,6 +538,15 @@ button {
   color: var(--gold-400);
 }
 
+.hero-title__mobile,
+.hero-title__desktop {
+  display: block;
+}
+
+.hero-title__desktop {
+  display: none;
+}
+
 .hero-section h1 .hero-title__break {
   display: inline;
 }
@@ -1703,6 +1712,15 @@ button {
     display: inline;
   }
 
+  .hero-title__mobile {
+    display: none;
+  }
+
+  .hero-title__desktop {
+    display: grid;
+    gap: 0.02em;
+  }
+
   .hero-section__content {
     max-width: 28rem;
     margin-inline: 1.25rem auto;
@@ -1805,12 +1823,12 @@ button {
   }
 
   .hero-section__content {
-    max-width: 650px;
+    max-width: 700px;
     margin-inline: clamp(1rem, 4vw, 4.5rem) auto;
   }
 
   .hero-section h1 {
-    font-size: 4.7rem;
+    font-size: clamp(4rem, 5.1vw, 4.85rem);
   }
 
   .hero-section__media img {
@@ -1940,7 +1958,7 @@ button {
   }
 
   .hero-section h1 {
-    font-size: 5.2rem;
+    font-size: clamp(4.35rem, 4.6vw, 5rem);
   }
 
   .section-heading h2,
